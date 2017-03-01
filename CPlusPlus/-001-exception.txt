@@ -1,0 +1,76 @@
+in C: malloc return Null
+in C++: new throw exception
+
+--------
+BaseException : parent of all exception
+children: sizeException, RangeException
+
+throw an expcetion, cannot get to turn off, until fire department arrived (catch)
+--------
+try
+{
+
+
+}
+catch(const RangeException &e) //pass constant and refference for = efficieny + protection
+{
+	cout << e << endl;
+}
+catch(...) //wild card, matches anything!
+{
+	throw; //gonna rethrow
+}
+--------
+void myfunction()
+// implied throw(...) //default rule, will throw anything
+throw() //promise not to throw any exception
+{
+	throw "hi im lying!";
+	//unexpected() will be called, which gonna calls terminate(), lol!
+}
+--------
+
+problem on final worth 6 points about Exception, regular problem worth 3 points.
+sample on top of NameSpaces slide.
+
+--------
+mySpace becomes a center of attention for pedophile.
+
+--------
+
+NameSpaces: https://msdn.microsoft.com/en-us/library/5cb46ksf.aspx
+scope: //tldr: some function has same name, by using namespace, find it from that scope
+
+//using namespace std;
+
+std::cout
+myNameSpace::cout
+
+^ need to force namespace if both scope has same function name.
+both become invisible, so eventho "using namespace std and using namespace myNameSpace is called"
+cout alone cannot be called.
+
+name of website shouted by students: raichu? rutzu? rutcu?
+-------
+
+HW:
+Testing is important, to understand people's code.
+better apply to testing job, if you want to undestand company's code.
+
+--------
+whats on the quiz:
+he shared story about why he force people to write code by hand
+
+----
+write entire template on Quiz
+gonna use template that he gonna give,
+define template
+memberfunction
+for int main(), instance of template, correct instantiation.
+
+gonna use template to define template class
+
+type <template> ??
+
+
+basically gonna write a template class.
